@@ -1,0 +1,179 @@
+body {
+    color         : #ffffff;
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    row-gap       : 50px;
+}
+
+.gamedevbackground {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100vw;
+    height    : 2500px;
+    z-index   : -1;
+    background: linear-gradient(71deg, #080509, #360a0a, #9c0101);
+}
+
+.gamedev {
+    position       : relative;
+    background     : #000000;
+    border-radius  : 30px;
+    width          : 1400px;
+    height         : 2204px;
+    border         : 2px solid transparent;
+    background     : linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    margin         : 22px 0;
+}
+.webdevbackground {
+    position  : absolute;
+    top       : 2500px;
+    left      : 0;
+    width     : 100vw;
+    height    : 1800px;
+    z-index   : -1;
+    background: linear-gradient(71deg, #080509, #968914, #c5c901);
+}
+.webdev {
+    position       : relative;
+    background     : #000000;
+    border-radius  : 30px;
+    width          : 1400px;
+    height: 1604px;
+    border         : 2px solid transparent;
+    background     : linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    margin         : 99px 0;
+}
+
+.graphicsdevbackground {
+    position  : absolute;
+    top       : 4300px;
+    left      : 0;
+    width     : 100vw;
+    height    : 2500px;
+    z-index   : -1;
+    background: linear-gradient(71deg, #080509, #149659, #01c944);
+}
+.graphicsdev{
+    position       : relative;
+    background     : #000000;
+    border-radius  : 30px;
+    width          : 1400px;
+    height         : 2204px;
+    border         : 2px solid transparent;
+    background     : linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    margin         : 99px 0;
+}
+.bg-white-box::after {
+    background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+    background: linear-gradient(71deg, #110e0e, #ffea00, #110e0e);
+}
+
+.bg-green-box::after {
+    background: linear-gradient(71deg, #0d1212, #07fc96, #0d1212);
+}
+
+.bg-red-box::after {
+    background: linear-gradient(71deg, #0d1212, #ff0000, #0d1212);
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-red-box::after {
+    position     : absolute;
+    top          : -1px;
+    bottom       : -1px;
+    left         : -1px;
+    right        : -1px;
+    content      : "";
+    z-index      : -1;
+    border-radius: 30px;
+}
+
+.card {
+    height: 84px;
+}
+
+.card-content {
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+}
+
+.game-development {
+    text-align     : center;
+    font-family    : 'Jaro-Regular', sans-serif;
+    font-size      : 96px;
+    font-weight    : 700;
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-start;
+    margin         : 30px;
+    margin-top     : 50px;
+    margin-left    : 50px;
+}
+
+.game-full-content-container {
+    margin-left: 50px;
+}
+
+.content-container {
+    display        : flex;
+    flex-direction : row;
+    gap            : 0px;
+    align-items    : flex-start;
+    justify-content: flex-start;
+    width          : 1300px;
+}
+
+.text-container {
+    display        : flex;
+    flex-direction : column;
+    gap            : 20px;
+    align-items    : flex-start;
+    justify-content: flex-start;
+    flex-shrink    : 0;
+    width          : 867px;
+    height         : 327px;
+    position       : relative;
+}
+
+.game-title {
+    text-align     : left;
+    font-family    : 'Jaro-Regular', sans-serif;
+    font-size      : 48px;
+    font-weight    : 400;
+    position       : relative;
+    align-self     : stretch;
+    height         : 76px;
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-start;
+}
+
+.game-description {
+    text-align : left;
+    font-family: 'KdamThmorPro-Regular', sans-serif;
+    font-size  : 32px;
+    font-weight: 400;
+    position   : relative;
+    align-self : stretch;
+    height     : 194px;
+}
+
+.image-container {
+    width     : 339px;
+    height    : 190px;
+    object-fit: cover;
+    padding   : 50px;
+}
+
+.image-container img {
+    border-radius: 5px;
+}
