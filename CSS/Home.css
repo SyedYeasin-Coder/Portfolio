@@ -106,7 +106,7 @@ a {
     align-items    : center;
     flex-direction : row;
     padding        : 0 40px;
-    column-gap     : 40%;
+    column-gap     : 20%;
     border         : 2px solid transparent;
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
