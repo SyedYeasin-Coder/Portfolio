@@ -7,6 +7,7 @@
     background-clip: padding-box;
     border-radius  : 45px;
     margin-bottom  : 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .about-heading-container {
@@ -38,8 +39,8 @@
 }
 
 .about-container {
-    display: flex;
-    margin-bottom: 30px;
+    display      : flex;
+    margin-bottom: 90px;
 }
 
 .card-container {
@@ -97,11 +98,11 @@ a {
 
 .profile-image {
     border-radius: 30%;
-    overflow: hidden;
+    overflow     : hidden;
 }
 
 .profile-image img {
-    width    : 100%;
+    width: 100%;
 }
 
 .profile-username {
@@ -183,6 +184,128 @@ a {
     font-size: 1.25em;
 }
 
-.bg-white-box::after{
+.bg-white-box::after {
     border-radius: 45px;
 }
+
+
+/* bottom card css */
+
+.w {
+    --primary-color: rgb(228, 231, 8);
+}
+
+.ga {
+    --primary-color: rgb(228, 11, 11);
+}
+
+.gr {
+    --primary-color: rgb(8, 231, 45);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0rem;
+}
+
+.bottom-card {
+    width           : 640px;
+    position        : relative;
+    background-color: rgb(16 16 16);
+    border          : 1px solid rgb(255 255 255 / 5%);
+    border-radius   : 1.5rem;
+    padding         : 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bottom-card:after {
+    content                   : "";
+    height                    : 70px;
+    width                     : 1px;
+    position                  : absolute;
+    left                      : -1px;
+    top                       : 65%;
+    transition                : top, opacity;
+    transition-duration       : 600ms;
+    transition-timing-function: ease;
+    background                : linear-gradient(transparent,
+            var(--primary-color),
+            transparent);
+    opacity: 0;
+}
+
+.bottom-card:after {
+    top    : 65%;
+    opacity: 0;
+}
+
+.bottom-card:hover:after {
+    top    : 25%;
+    opacity: 1;
+}
+
+.bottom-card-content {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : 1rem;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size    : 1.1rem 1.1rem;
+    padding            : 4rem;
+    border-radius      : 1.25rem;
+    overflow           : hidden;
+}
+
+.bottom-card-content> :is(h1, h3, p) {
+    text-align: center;
+}
+
+.bottom-card-content>h1 {
+    color    : rgb(250 249 246);
+    font-size: 2.6rem;
+}
+
+.bottom-card-content>h3 {
+    color         : var(--primary-color);
+    text-transform: uppercase;
+    font-size     : 0.76rem;
+}
+
+.bottom-card-content>p {
+    color      : rgb(255 255 255 / 75%);
+    line-height: 1.5rem;
+}
+
+@media(max-width: 700px) {
+    .card {
+        width        : calc(100% - 2rem);
+        margin       : 0rem 1rem;
+        padding      : 0.75rem;
+        border-radius: 1rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .bottom-card-content {
+        padding: 3rem;
+    }
+
+    .bottom-card-content>h1 {
+        font-size: 2.2rem;
+    }
+}
+
+.whole-bottom-container {
+    display   : flex;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+  
