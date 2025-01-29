@@ -26,7 +26,9 @@ body {
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 22px 0;
+    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+
 .webdevbackground {
     position  : absolute;
     top       : 2500px;
@@ -36,16 +38,18 @@ body {
     z-index   : -1;
     background: linear-gradient(71deg, #080509, #968914, #c5c901);
 }
+
 .webdev {
     position       : relative;
     background     : #000000;
     border-radius  : 30px;
     width          : 1400px;
-    height: 1604px;
+    height         : 1604px;
     border         : 2px solid transparent;
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 99px 0;
+    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .graphicsdevbackground {
@@ -57,7 +61,8 @@ body {
     z-index   : -1;
     background: linear-gradient(71deg, #080509, #149659, #01c944);
 }
-.graphicsdev{
+
+.graphicsdev {
     position       : relative;
     background     : #000000;
     border-radius  : 30px;
@@ -67,7 +72,9 @@ body {
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 99px 0;
+    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+
 .bg-white-box::after {
     background: linear-gradient(71deg, #121013, #b0afb0, #121013);
 }
@@ -107,16 +114,18 @@ body {
 }
 
 .game-development {
-    text-align     : center;
-    font-family    : 'Jaro-Regular', sans-serif;
-    font-size      : 96px;
-    font-weight    : 700;
-    display        : flex;
-    align-items    : center;
-    justify-content: flex-start;
-    margin         : 30px;
-    margin-top     : 50px;
-    margin-left    : 50px;
+    text-align         : center;
+    font-family        : "Jaro", serif;
+    font-optical-sizing: auto;
+    font-weight        : 400;
+    font-style         : normal;
+    font-size          : 96px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : flex-start;
+    margin             : 30px;
+    margin-top         : 50px;
+    margin-left        : 50px;
 }
 
 .game-full-content-container {
@@ -145,16 +154,18 @@ body {
 }
 
 .game-title {
-    text-align     : left;
-    font-family    : 'Jaro-Regular', sans-serif;
-    font-size      : 48px;
-    font-weight    : 400;
-    position       : relative;
-    align-self     : stretch;
-    height         : 76px;
-    display        : flex;
-    align-items    : center;
-    justify-content: flex-start;
+    text-align         : left;
+    font-size          : 48px;
+    font-family        : "Jaro", serif;
+    font-optical-sizing: auto;
+    font-weight        : 400;
+    font-style         : normal;
+    position           : relative;
+    align-self         : stretch;
+    height             : 76px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : flex-start;
 }
 
 .game-description {
@@ -165,6 +176,9 @@ body {
     position   : relative;
     align-self : stretch;
     height     : 194px;
+    font-family: "Kdam Thmor Pro", serif;
+    font-weight: 400;
+    font-style : normal;
 }
 
 .image-container {
