@@ -7,7 +7,7 @@
     background-clip: padding-box;
     border-radius  : 45px;
     margin-bottom  : 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .about-heading-container {
@@ -220,7 +220,7 @@ p {
     border          : 1px solid rgb(255 255 255 / 5%);
     border-radius   : 1.5rem;
     padding         : 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow      : 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .bottom-card:after {
@@ -304,11 +304,20 @@ p {
 }
 
 .whole-bottom-container {
-    display   : flex;
-    column-gap: 30px;
+    display      : flex;
+    column-gap   : 30px;
     margin-bottom: 50px;
+    width        : 90%;
 }
 
+.heading {
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style : italic;
+}
 
-
-  
+.heading2 {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style : normal;
+}
