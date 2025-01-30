@@ -26,7 +26,7 @@ body {
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 22px 0;
-    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .webdevbackground {
@@ -49,7 +49,7 @@ body {
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 99px 0;
-    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .graphicsdevbackground {
@@ -72,7 +72,7 @@ body {
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 99px 0;
-    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .bg-white-box::after {
