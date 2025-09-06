@@ -1,76 +1,47 @@
+:root {
+    --fh2: clamp(0.5rem, 0.8rem + 4vw, 8rem);
+    --fh3: clamp(0.3rem, 0.4rem + 4vw, 3rem);
+    --fp : clamp(0.25rem, 0.8rem + 1vw, 2rem);
+}
+
 body {
-    color         : #ffffff;
-    display       : flex;
-    align-items   : center;
-    flex-direction: column;
-    row-gap       : 50px;
+    font-family: 'Jaro-Regular', sans-serif;
+    background : linear-gradient(71deg, #080509, #360a0a, #9c0101);
 }
 
-.gamedevbackground {
-    position  : absolute;
-    top       : 0;
-    left      : 0;
-    width     : 100vw;
-    height    : 2500px;
-    z-index   : -1;
-    background: linear-gradient(71deg, #080509, #360a0a, #9c0101);
+.navbar::after {
+    background: linear-gradient(71deg, #0d1212, #ff0000, #0d1212);
 }
 
-.gamedev {
+.wrapper {
     position       : relative;
-    background     : #000000;
     border-radius  : 30px;
-    width          : 1400px;
-    height         : 2204px;
     border         : 2px solid transparent;
     background     : linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     margin         : 22px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow     : 0 4px 10px rgba(0, 0, 0, 0.4);
+    width          : min(100%, calc(90rem + 1vw));
 }
+
+.webdevbackground,
+.graphicsdevbackground {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    z-index        : -1;
+
+}
+
 .webdevbackground {
-    position  : absolute;
-    top       : 2500px;
-    left      : 0;
-    width     : 100vw;
-    height    : 1800px;
-    z-index   : -1;
     background: linear-gradient(71deg, #080509, #968914, #c5c901);
-}
-.webdev {
-    position       : relative;
-    background     : #000000;
-    border-radius  : 30px;
-    width          : 1400px;
-    height: 1604px;
-    border         : 2px solid transparent;
-    background     : linear-gradient(71deg, #080509, #1a171c, #080509);
-    background-clip: padding-box;
-    margin         : 99px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .graphicsdevbackground {
-    position  : absolute;
-    top       : 4300px;
-    left      : 0;
-    width     : 100vw;
-    height    : 2500px;
-    z-index   : -1;
     background: linear-gradient(71deg, #080509, #149659, #01c944);
 }
-.graphicsdev{
-    position       : relative;
-    background     : #000000;
-    border-radius  : 30px;
-    width          : 1400px;
-    height         : 2204px;
-    border         : 2px solid transparent;
-    background     : linear-gradient(71deg, #080509, #1a171c, #080509);
-    background-clip: padding-box;
-    margin         : 99px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
+
 .bg-white-box::after {
     background: linear-gradient(71deg, #121013, #b0afb0, #121013);
 }
@@ -109,74 +80,68 @@ body {
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
 }
 
-.game-development {
-    text-align     : center;
-    font-family    : 'Jaro-Regular', sans-serif;
-    font-size      : 96px;
-    font-weight    : 700;
-    display        : flex;
-    align-items    : center;
-    justify-content: flex-start;
-    margin         : 30px;
-    margin-top     : 50px;
-    margin-left    : 50px;
+.heading {
+    text-align : center;
+    font-size  : var(--fh2);
+    font-weight: 700;
+    margin     : 50px;
+    text-align : left;
 }
 
-.game-full-content-container {
-    margin-left: 50px;
+.full-content-container {
+    padding: 0 50px;
 }
 
 .content-container {
     display        : flex;
-    flex-direction : row;
-    gap            : 0px;
-    align-items    : flex-start;
-    justify-content: flex-start;
-    width          : 1300px;
+    align-items    : center;
+    justify-content: space-between;
 }
 
 .text-container {
-    display        : flex;
-    flex-direction : column;
-    gap            : 20px;
-    align-items    : flex-start;
-    justify-content: flex-start;
-    flex-shrink    : 0;
-    width          : 867px;
-    height         : 327px;
-    position       : relative;
+    display       : flex;
+    flex-direction: column;
+    width         : 867px;
+    height        : 327px;
+    margin-right  : 2rem;
 }
 
-.game-title {
-    text-align     : left;
-    font-family    : 'Jaro-Regular', sans-serif;
-    font-size      : 48px;
-    font-weight    : 400;
-    position       : relative;
-    align-self     : stretch;
-    height         : 76px;
+.title {
+    font-size      : var(--fh3);
     display        : flex;
     align-items    : center;
     justify-content: flex-start;
+    margin-bottom  : 1rem;
 }
 
-.game-description {
-    text-align : left;
+.description {
     font-family: 'KdamThmorPro-Regular', sans-serif;
-    font-size  : 32px;
-    font-weight: 400;
-    position   : relative;
-    align-self : stretch;
-    height     : 194px;
+    font-size  : var(--fp);
 }
 
 .image-container {
-    width     : 339px;
-    height    : 190px;
-    object-fit: cover;
-    padding   : 50px;
+    width    : 339px;
+    min-width: 300px;
 }
 
 .image-container img {
     border-radius: 5px;
+}
+
+@media (width < calc(768 / 16 * 1rem)) {
+    .content-container {
+        flex-wrap    : wrap;
+        margin-bottom: 4rem;
+    }
+
+    .text-container {
+        height       : auto;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+}
+@media (width <= calc(375 / 16 * 1rem)) {
+    .image-container {
+    min-width: 100%;
+}
 }

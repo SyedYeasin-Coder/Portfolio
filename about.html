@@ -5,95 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
-    <link rel="stylesheet" href="./CSS/Home.css">
+    <link rel="stylesheet" href="./CSS/CSS_reset_Josh.css">
     <link rel="stylesheet" href="./CSS/project.css">
+    <link rel="stylesheet" href="./CSS/Home.css">
     <link rel="stylesheet" href="./CSS/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="navbar-container">
-        <div class="navbar card">
-            <div class="navbar-elements-container card-content" id="nav-111">
-                <div class="nav-element"> <a href="index.html" class="link-111"> Home </a> </div>
-                <div class="nav-element"> <a href="project.html" class="link-111"> Projects </a></div>
-                <div class="nav-element"> <a href="about.html" class="link-111"> About</a> </div>
-            </div>
-        </div>
-    </div>
-    <div class="about bg-white-box">
-        <div class="about-heading-container">
-            <div class="heading">About Me</div>
-        </div>
-        <div class="about-container">
-            <div class="head2-description-container">
-                <div class="heading2">Who Am I?</div>
-                <div class="about-me-description">
-                    Hi, I’m Syed Yeasin, a Computer Science Engineering student with a strong passion for game development, web
-                    development, and graphic design. My journey in graphic design began in 2016, allowing me to work on numerous
-                    projects seamlessly. I’m proficient in tools like Photoshop, Illustrator, and Adobe Animate, which have been
-                    instrumental in bringing my creative ideas to life.
-                    My interest in electronics further complements my technical pursuits, and studying programming has opened
-                    doors to building virtual projects I once only dreamed of. Combining my design expertise with programming
-                    knowledge has empowered me to tackle innovative projects and explore endless possibilities in the digital
-                    world.
+    <nav>
+        <div class="navbar bg-white-box-nav">
+            <div class="navbar-elements-container" id="nav-111">
+                <div class="nav-element">
+                    <a href="index.html" class="link-111"> Home </a>
+                </div>
+                <div class="nav-element">
+                    <a href="project.html" class="link-111"> Projects </a>
+                </div>
+                <div class="nav-element">
+                    <a href="about.html" class="link-111"> About</a>
                 </div>
             </div>
-            <div class="card-container">
-                <article class="profile">
-                    <div class="profile-image">
-                        <img src="./Assets/somewhat professional.jpeg" />
-                    </div>
-                    <h2 class="profile-username">Syed Yeasin</h2>
-                    <small class="profile-user-handle">@syed_yeasin</small>
-                    <div class="profile-actions">
-                        <button class="btn btn--primary">Follow</button>
-                        <button class="btn btn--icon">
-                            <img src="./Assets/icons/like.png" alt="">
-                        </button>
-                        <button class="btn btn--icon">
-                            <img src="./Assets/icons/dots.png" alt="">
-                        </button>
-                    </div>
-                    <div class="profile-links">
-                        <a href="#" class="link link--icon">
-                            <img src="./Assets/icons/twitter.png" alt="">
-                        </a>
-                        <a href="#" class="link link--icon">
-                            <img src="./Assets/icons/facebook.png" alt="">
-                        </a>
-                        <a href="#" class="link link--icon">
-                            <img src="./Assets/icons/instagram.png" alt="">
-                        </a>
-                    </div>
-                </article>
+        </div>
+    </nav>
+    <div class="about bg-white-box">
+        <h1 class="heading">About Me</h1>
+        <div class="about-wrapper">
+            <div class="about-content-container">
+                <h3 class="heading2">Who Am I?</h3>
+                <p class="about-me-description">
+                    Hi, I’m Syed Yeasin, a 5th-semester Computer Science and Engineering undergraduate with a strong
+                    interest in web development, game development, and graphic design. My journey began in 2016 with
+                    graphic design, where I worked on numerous projects using tools like Photoshop, Illustrator, and
+                    Adobe Animate, sharpening my creative eye.
+                    Alongside design, I ventured into programming—starting with Scratch, then learning C and C++, before
+                    exploring object-oriented programming in Java and building a café management system. As I
+                    progressed, I discovered my passion for web development. I started with HTML and CSS, gradually
+                    moving into JavaScript, and eventually into backend development with Django, where I built a
+                    StudyRoom website that strengthened my understanding of full-stack development.
+                    I’ve also experimented with Unity and Lua to create small games, but web development became the
+                    space where my creativity and technical knowledge align best. With a balance of design expertise and
+                    programming skills, I enjoy building digital solutions that are not only functional but also
+                    engaging and user-friendly.
+                </p>
             </div>
-        </div>   
+        </div>
+    </div>
+
+    <div class="shadow" id="social">
+        <div class="card-container">
+                    <div class="profile">
+                            <img class="profile-image" src="./Assets/Yeasin.jpg" />
+                        <div class="profile-content">
+                            <div class="profile-name-container">
+                                <h2 class="profile-username">Syed Yeasin</h2>
+                                <small class="profile-user-handle">@syed_yeasin</small>
+                            </div>
+                            <div class="profile-actions">
+                                <button class="btn btn--primary">Follow</button>
+                                <button class="btn btn--icon">
+                                    <img src="./Assets/icons/like.png" alt="">
+                                </button>
+                                <button class="btn btn--icon">
+                                    <img src="./Assets/icons/dots.png" alt="">
+                                </button>
+                            </div>
+                            <div class="profile-links">
+                                <a href="#" class="link link--icon">
+                                    <img src="./Assets/icons/twitter.png" alt="">
+                                </a>
+                                <a href="#" class="link link--icon">
+                                    <img src="./Assets/icons/facebook.png" alt="">
+                                </a>
+                                <a href="#" class="link link--icon">
+                                    <img src="./Assets/icons/instagram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </div>
     <div class="whole-bottom-container">
-        <div class="bottom-card w">
+        <div class="bottom-card w bg-white-box">
             <div class="bottom-card-content">
-              <h3>Web Development</h3>
-              <h1>The Art of Crafting Seamless Digital Experiences</h1>
-              <p>Building responsive, user-friendly websites is more than just coding—it’s about creating engaging experiences. With expertise in front-end and back-end technologies, I focus on developing dynamic, visually appealing websites that merge functionality with aesthetics. From interactive UI/UX design to optimizing performance, I ensure that every web project delivers an intuitive and efficient user experience.</p>
+                <h3>Web Development</h3>
+                <h1>The Art of Crafting Seamless Digital Experiences</h1>
+                <p>Building responsive, user-friendly websites is more than just coding—it’s about creating engaging
+                    experiences. With expertise in front-end and back-end technologies, I focus on developing dynamic,
+                    visually appealing websites that merge functionality with aesthetics. From interactive UI/UX design
+                    to optimizing performance, I ensure that every web project delivers an intuitive and efficient user
+                    experience.</p>
             </div>
-          </div>
-          <div class="bottom-card ga">
+        </div>
+        <div class="bottom-card ga bg-white-box">
             <div class="bottom-card-content">
-              <h3>Game Development</h3>
-              <h1>Bringing Imagination to Life Through Code</h1>
-              <p>Game development is where creativity meets logic. From designing immersive worlds to implementing mechanics that make gameplay feel natural, I enjoy every step of the process. Whether it’s building 2D or 3D games, optimizing performance, or experimenting with AI in gaming, my passion for game development drives me to push boundaries and create captivating experiences.</p>
+                <h3>Game Development</h3>
+                <h1>Bringing Imagination to Life Through Code</h1>
+                <p>Game development is where creativity meets logic. From designing immersive worlds to implementing
+                    mechanics that make gameplay feel natural, I enjoy every step of the process. Whether it’s building
+                    2D or 3D games, optimizing performance, or experimenting with AI in gaming, my passion for game
+                    development drives me to push boundaries and create captivating experiences.</p>
             </div>
-          </div>
-          <div class="bottom-card gr">
+        </div>
+        <div class="bottom-card gr bg-white-box">
             <div class="bottom-card-content">
-              <h3>Graphics Designing</h3>
-              <h1>Transforming Ideas into Visual Masterpieces</h1>
-              <p>Since 2016, I’ve been crafting stunning visuals using tools like Photoshop, Illustrator, and Adobe Animate. Whether it’s designing sleek UI elements, branding materials, or digital illustrations, I focus on delivering aesthetically pleasing and impactful designs. Graphic design isn’t just about making things look good—it’s about effectively communicating ideas through visuals.</p>
+                <h3>Graphics Designing</h3>
+                <h1>Transforming Ideas into Visual Masterpieces</h1>
+                <p>Since 2016, I’ve been crafting stunning visuals using tools like Photoshop, Illustrator, and Adobe
+                    Animate. Whether it’s designing sleek UI elements, branding materials, or digital illustrations, I
+                    focus on delivering aesthetically pleasing and impactful designs. Graphic design isn’t just about
+                    making things look good—it’s about effectively communicating ideas through visuals.</p>
             </div>
-          </div>
+        </div>
     </div>
 </body>
 
