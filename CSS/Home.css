@@ -3,8 +3,9 @@
     --fh1: clamp(2rem, 1.5rem + 1vw, 4rem);
 
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -181,7 +182,6 @@ main {
     margin    : 0 1rem;
     max-width : 50%;
 }
-
 /* Cube Animation */
 
 .container {
@@ -207,9 +207,11 @@ main {
 .box-card {
     animation: rotate3d 12s infinite linear;
 }
-.box-card:hover{
+
+.box-card:hover {
     animation-play-state: paused;
 }
+
 .face {
     position           : absolute;
     width              : 100%;
@@ -289,12 +291,27 @@ main {
 }
 
 @keyframes rotate3d {
-  0%   { transform: rotateX(0deg) rotateY(0deg); }
-  25%  { transform: rotateX(90deg) rotateY(180deg); }
-  50%  { transform: rotateX(180deg) rotateY(360deg); }
-  75%  { transform: rotateX(270deg) rotateY(540deg); }
-  100% { transform: rotateX(360deg) rotateY(720deg); }
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateX(90deg) rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(360deg);
+    }
+
+    75% {
+        transform: rotateX(270deg) rotateY(540deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(720deg);
+    }
 }
+
 @media (max-width: 950px) {
     .box-card {
         width : 150px;
@@ -345,9 +362,16 @@ main {
     width        : 390px;
     height       : 144px;
     box-shadow   : 0 4px 10px rgba(0, 0, 0, 0.4);
+    width        : 390px;
+    height       : 144px;
+    box-shadow   : 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .skill-container {
+    border-radius: 33px;
+    width        : 390px;
+    height       : 144px;
+    box-shadow   : 0 4px 10px rgba(0, 0, 0, 0.4);
     border-radius: 33px;
     width        : 390px;
     height       : 144px;
@@ -359,6 +383,7 @@ main {
     text-align     : center;
     font-size      : 66px;
     width          : inherit;
+    height         : 114px;
     height         : 114px;
     display        : flex;
     align-items    : center;
@@ -402,6 +427,7 @@ main {
     background-color: var(--card-color);
     cursor          : pointer;
     height          : 114px;
+    height          : 114px;
     position        : relative;
 }
 
@@ -426,52 +452,58 @@ main {
 .s:before {
     inset: -2px;
 }
-
-.card-content {
-    background-color: var(--card-color);
-    border-radius   : inherit;
-    inset           : 1px;
-    position        : absolute;
-}
-
-
-
-
-@keyframes shimmer111 {
-    0% {
-        background-position: 200% 0;
+    .s:before {
+        inset: -2px;
     }
 
-    100% {
-        background-position: -200% 0;
-    }
-}
-
-@media (max-width: calc(1000 / 16 * 1rem)) {
-    .hero {
-        justify-content: center;
-    }
-}
-
-@media (max-width: calc(768 / 16 * 1rem)) {
-    .hero-text-container {
-        margin   : 0;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: calc(400 / 16 * 1rem)) {
-    .hero {
-        padding: 0.5rem;
+    .card-content {
+        background-color: var(--card-color);
+        border-radius   : inherit;
+        inset           : 1px;
+        position        : absolute;
     }
 
-    .navbar-elements-container {
-        flex-direction: column;
-    }
-}
 
-@media (max-width: calc(350 / 16 * 1rem)) {
-    main {
-        width: 100%;
+
+
+    @keyframes shimmer111 {
+        0% {
+            background-position: 200% 0;
+            background-position: 200% 0;
+        }
+
+
+        100% {
+            background-position: -200% 0;
+            background-position: -200% 0;
+        }
     }
+
+    @media (max-width: calc(1000 / 16 * 1rem)) {
+        .hero {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: calc(768 / 16 * 1rem)) {
+        .hero-text-container {
+            margin   : 0;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: calc(400 / 16 * 1rem)) {
+        .hero {
+            padding: 0.5rem;
+        }
+
+        .navbar-elements-container {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: calc(350 / 16 * 1rem)) {
+        main {
+            width: 100%;
+        }
 }
