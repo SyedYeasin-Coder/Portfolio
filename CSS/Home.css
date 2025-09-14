@@ -389,11 +389,6 @@ main {
     align-items    : center;
     justify-content: center;
 }
-
-.box-black {
-    width: 150px;
-}
-
 .full-edu-container {
     display       : flex;
     flex-direction: column;
